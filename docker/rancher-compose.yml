@@ -1,0 +1,5 @@
+docker-mem-leak:
+  scale: 1
+  upgrade_strategy:
+    start_first: false
+

@@ -1,0 +1,2 @@
+version=0.0.1
+appname=docker-mem-leak

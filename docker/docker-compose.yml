@@ -1,0 +1,8 @@
+docker-mem-leak:
+  image: registry.icg360.net/docker-mem-leak:${VERSION}
+  container_name: docker-mem-leak
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: role=docker
+    io.rancher.scheduler.affinity:container_label_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
+    io.rancher.container.dns: 'true'
